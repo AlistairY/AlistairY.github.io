@@ -15,3 +15,6 @@
 .profile-identity h2{margin-bottom:16px}
 
 .project-authors{font-size:13px;line-height:1.65;color:var(--muted);margin:9px 0 12px}.project-authors strong{font-weight:600}.project-actions{flex-wrap:wrap;row-gap:7px}.paper-link{font-size:13px}.project-status{white-space:normal}#detail-content .project-authors{font-family:var(--sans);font-size:14px}#detail-content .project-actions{margin:15px 0 24px}
+
+/* Keep complete paper figures readable without cropping, including on phones. */
+.project-image-button.paper-figure{background:#fff}.project-image-button.paper-figure img{height:auto;aspect-ratio:auto;object-fit:contain}

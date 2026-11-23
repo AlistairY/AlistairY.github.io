@@ -89,7 +89,7 @@ window.SITE_CONTENT = {
     {
       "id": "world-models",
       "category": "world",
-      "image": "causal-writability.svg",
+      "image": "causal-writability-figure1.png",
       "meta": "VIDEO MODELS · CAUSAL INTERVENTIONS",
       "title": "A Chosen Future Can Still Be Rewritten: Causal Writability in Video Models",
       "description": "When a video model predicts the wrong motion, has it failed to learn the physics—or failed to use what it knows? We find that a small internal intervention can recover correct motion even after the model has chosen an incorrect future.",
@@ -97,7 +97,7 @@ window.SITE_CONTENT = {
       "approach": "We train video models on color–motion correlations, then present conflicting evidence: a red mass whose observed motion is fast rather than slow. Low-dimensional edits derived from physical variables test where internal motion information can still control the output.",
       "evidence": "Correct motion can be restored through internal edits. At a fixed intervention strength, effectiveness closes sharply across network depth, although stronger downstream edits can still recover physical motion. Early writability also distinguishes errors that training later corrects from those that persist. The phenomenon is reproduced in a pretrained 1.3B video model.",
       "boundary": "The effect depends on intervention location and strength. Recovering correct motion in these settings does not by itself establish a general understanding of physics.",
-      "caption": "Conceptual illustration of an internal intervention changing a predicted trajectory; not experimental data.",
+      "caption": "Figure 1 from the paper: appearance–motion conflicts, an internal edit that restores physical motion, and the depth boundary for a fixed-strength intervention.",
       "status": "ICLR 2027 submission",
       "links": [
         {
@@ -108,7 +108,8 @@ window.SITE_CONTENT = {
           "label": "PDF",
           "url": "https://arxiv.org/pdf/2609.15980"
         }
-      ]
+      ],
+      "paperFigure": true
     },
     {
       "id": "learning-dynamics",
@@ -140,7 +141,7 @@ window.SITE_CONTENT = {
     {
       "id": "architectureiq",
       "category": "research",
-      "image": "architectureiq.svg",
+      "image": "architectureiq-figure1.png",
       "meta": "AI RESEARCH · TRAINING INTUITION",
       "title": "ArchitectureIQ: On the Measure of Training Intuition",
       "description": "Before running an experiment, researchers usually have a guess about which model or optimizer will work. We built ArchitectureIQ to test whether language models can make these judgments too, and to see where their intuition breaks down.",
@@ -155,7 +156,7 @@ window.SITE_CONTENT = {
           "url": "https://arxiv.org/pdf/2609.39714"
         }
       ],
-      "caption": "Conceptual illustration: compare candidate training recipes for the same dataset. No benchmark results are plotted.",
+      "caption": "Figure 1 from the paper: accuracy on ArchitectureIQ. Model results use the 500-question benchmark; the human result shown uses a 50-question subset.",
       "sections": [
         {
           "heading": "Why test training intuition?",
@@ -169,12 +170,13 @@ window.SITE_CONTENT = {
           "heading": "What stood out",
           "text": "The models get many questions right, but their choices are not always sensitive to changes in the data. Giving them more time to reason helps surprisingly little. A small collection of explicit lessons helps weaker models more. That leaves a question I find interesting: what would it take to turn a collection of useful training intuitions into knowledge we can reason with?"
         }
-      ]
+      ],
+      "paperFigure": true
     },
     {
       "id": "scaling-insight",
       "category": "research",
-      "image": "scaling-insight.svg",
+      "image": "scaling-insight-figure1.png",
       "meta": "AI RESEARCH · SCIENTIFIC UNDERSTANDING",
       "title": "AI Research Should Scale Insight, Not Just Compute",
       "description": "A better training result does not always tell us what to try next. We study how observing learning dynamics can help researchers form hypotheses, test interventions, and leave behind knowledge that others can use.",
@@ -194,7 +196,8 @@ window.SITE_CONTENT = {
           "text": "One example is an attention-entropy pattern in nanoGPT’s second block that changes with network depth and learning-rate warmup. It raises questions that the usual weight-norm curves do not reveal. In a separate AutoResearch study, OPHIS finds interventions that improve validation performance within a fixed training-step budget. These are early examples. Whether the resulting knowledge transfers, and when the benefit justifies the time and compute spent acquiring it, remain open questions."
         }
       ],
-      "caption": "Conceptual illustration of observations informing explanations and further experiments; not a figure from the submitted paper."
+      "caption": "Figure 1 from the paper: a schematic comparison of outcome-driven and insight-guided research. The landscape and paths illustrate the research process; they are not experimental measurements.",
+      "paperFigure": true
     }
   ],
   "notes": []
