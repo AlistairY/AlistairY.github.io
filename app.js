@@ -33,7 +33,7 @@
     dialog.scrollTop=0;
     document.body.style.overflow='hidden';
   }
-  document.getElementById('research-grid').innerHTML=areas.map(a=>`<article class="research-area"><span class="area-label">${escape(a.label)}</span><h3>${escape(a.title)}</h3><p>${escape(a.text)}</p><a href="#projects" data-area="${a.filter}">${escape(ui.showProjects)}</a></article>`).join('');
+  document.getElementById('research-grid').innerHTML=areas.map(a=>`<article class="research-area"><h3>${escape(a.title)}</h3><p>${escape(a.text)}</p><a href="#projects" data-area="${a.filter}">${escape(ui.showProjects)}</a></article>`).join('');
   document.addEventListener('click',e=>{
     const project=e.target.closest('[data-project]');
     const f=e.target.closest('[data-filter]');
